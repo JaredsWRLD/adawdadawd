@@ -1,0 +1,20 @@
+{
+	"name": "@xboxreplay/xboxlive-auth_electron-app",
+	"private": true,
+	"version": "0.0.1",
+	"license": "MIT",
+	"main": "./lib/main.js",
+	"author": {
+		"name": "Alexis Bize",
+		"email": "alexis.bize@gmail.com"
+	},
+	"scripts": {
+		"preinstall": "npm install --prefix ../../ && npm run build",
+		"build": "npm run build --prefix ../../",
+		"start": "electron ."
+	},
+	"dependencies": {
+		"@xboxreplay/xboxlive-auth": "file:../../",
+		"electron": "^11.2.0"
+	}
+}
